@@ -1,4 +1,4 @@
-package com.example.dontharm.ui.theme
+package com.example.dontharmmobiletwo.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

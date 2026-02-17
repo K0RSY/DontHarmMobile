@@ -1,4 +1,4 @@
-package com.example.dontharm
+package com.example.dontharmmobiletwo
 
 import org.junit.Test
 
