@@ -10,7 +10,7 @@ class NewsRepositoryImpl: NewsRepository {
     override fun getNews(context: Context): List<News> {
         val jsonString = getJsonFromAssets(context, "news.json")
 
-        return jsonString?.let { Json.decodeFromString<List<News>>(it) }!!
+        return Json.decodeFromString<List<News>>(jsonString!!)
     }
 
     fun getJsonFromAssets(context: Context, fileName: String): String? {

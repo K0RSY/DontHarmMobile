@@ -8,15 +8,11 @@ import java.time.Period
 data class User(
     val login: String,
     val password: String,
-    val firstName: String,
-    val lastName: String,
-    val middleName: String,
+    val names: String,
     val birthDate: String,
     val phone: String,
     val email: String
 ) {
-    fun getFullName(): String = "$lastName $firstName $middleName"
-
     fun getAge(): Int {
         val birth = LocalDate.parse(birthDate)
         val current = LocalDate.now()
